@@ -12,6 +12,7 @@ def do_pack():
     """
     making an archive on web_static folder
     """
+
     time = datetime.now()
     archive = 'web_static_' + time.strftime("%Y%m%d%H%M%S") + '.' + 'tgz'
     local('mkdir -p versions')
